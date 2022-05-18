@@ -1,0 +1,55 @@
+:host {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.group {
+  overflow: auto;
+  width: 25%;
+  flex-shrink: 0;
+  padding: 16px;
+  align-items: stretch;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_1 {
+  padding: 16px;
+  flex-grow: 1;
+  flex-basis: 0;
+  align-items: stretch;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_2 {
+  flex-grow: 1;
+  flex-basis: 0;
+  align-items: stretch;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.list {
+  height: max-content;
+  min-width: max-content;
+}
+.list-item {
+  min-width: 0;
+  min-height: 0;
+}
+.grid {
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
