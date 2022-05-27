@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-import { IgxListModule, IgxAvatarModule, IgxIconModule, IgxGridModule } from 'igniteui-angular';
+import { IgxListModule, IgxAvatarModule, IgxGridModule } from 'igniteui-angular';
 import { WhateverViewComponent } from './whatever-view.component';
 
 describe('WhateverViewComponent', () => {
@@ -13,7 +13,7 @@ describe('WhateverViewComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ WhateverViewComponent ],
-      imports: [ NoopAnimationsModule, FormsModule, HttpClientTestingModule, IgxListModule, IgxAvatarModule, IgxIconModule, IgxGridModule ]
+      imports: [ NoopAnimationsModule, FormsModule, HttpClientTestingModule, IgxListModule, IgxAvatarModule, IgxGridModule ]
     })
     .compileComponents();
   });

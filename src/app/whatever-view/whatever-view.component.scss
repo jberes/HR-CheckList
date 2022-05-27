@@ -31,6 +31,7 @@
   min-height: 50px;
 }
 .list {
+  margin: 2px;
   height: max-content;
   min-width: max-content;
 }
@@ -43,11 +44,6 @@
   min-height: 50px;
   flex-grow: 1;
   flex-basis: 0;
-}
-.icon {
-  width: 24px;
-  height: 24px;
-  font-size: 24px;
 }
 .column-layout {
   display: flex;
