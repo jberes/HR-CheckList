@@ -8,6 +8,7 @@ import { IgxListModule, IgxAvatarModule, IgxGridModule, IgxButtonModule, IgxRipp
 import { FormsModule } from '@angular/forms';
 import { MyInfoComponent } from './my-info/my-info.component';
 import { HomeComponent } from './home/home.component';
+import { NewListComponent } from './new-list/new-list.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     WhateverViewComponent,
     MyInfoComponent,
-    HomeComponent
+    HomeComponent,
+    NewListComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import { ErrorRoutingModule } from './error-routing/error-routing.module';
 import { WhateverViewComponent } from './whatever-view/whatever-view.component';
 import { MyInfoComponent } from './my-info/my-info.component';
 import { HomeComponent } from './home/home.component';
+import { NewListComponent } from './new-list/new-list.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -14,6 +15,7 @@ export const routes: Routes = [
   { path: 'whatever-view', component: WhateverViewComponent, data: { text: 'WhateverView' } },
   { path: 'my-info', component: MyInfoComponent, data: { text: 'My Info' } },
   { path: 'home', component: HomeComponent, data: { text: 'Home' } },
+  { path: 'new-list', component: NewListComponent, data: { text: 'NewList' } },
   { path: '**', component: PageNotFoundComponent } // must always be last
 ];
 

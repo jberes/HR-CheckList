@@ -1,0 +1,17 @@
+<div class="group column-layout">
+  <igx-list *ngFor="let item of northwindEmployees" class="list">
+    <igx-list-item [isHeader]="false" class="list-item">
+      <span igxListThumbnail>
+        <igx-avatar [src]="item.avatarUrl" [roundShape]="true"></igx-avatar>
+      </span>
+      <span igxListLineTitle>{{ item.lastName }}</span>
+      <span igxListLineSubTitle>{{ item.firstName }}</span>
+      <span igxListAction>
+        <igx-icon class="icon">
+          star
+        </igx-icon>
+      </span>
+    </igx-list-item>
+  </igx-list>
+</div>
+<div class="group column-layout"></div>
