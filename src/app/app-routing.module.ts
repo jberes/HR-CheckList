@@ -5,17 +5,17 @@ import { PageNotFoundComponent } from './error-routing/not-found/not-found.compo
 import { UncaughtErrorComponent } from './error-routing/error/uncaught-error.component';
 import { ErrorRoutingModule } from './error-routing/error-routing.module';
 import { WhateverViewComponent } from './whatever-view/whatever-view.component';
+import { NewListComponent } from './new-list/new-list.component';
 import { MyInfoComponent } from './my-info/my-info.component';
 import { HomeComponent } from './home/home.component';
-import { NewListComponent } from './new-list/new-list.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'error', component: UncaughtErrorComponent },
   { path: 'whatever-view', component: WhateverViewComponent, data: { text: 'WhateverView' } },
+  { path: 'new-list', component: NewListComponent, data: { text: 'NewList' } },
   { path: 'my-info', component: MyInfoComponent, data: { text: 'My Info' } },
   { path: 'home', component: HomeComponent, data: { text: 'Home' } },
-  { path: 'new-list', component: NewListComponent, data: { text: 'NewList' } },
   { path: '**', component: PageNotFoundComponent } // must always be last
 ];
 
